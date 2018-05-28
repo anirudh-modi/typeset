@@ -1,0 +1,97 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    font-family: sans-serif;
+}
+
+body,html
+{
+    height:100%;
+}
+
+#app
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+.appContainer
+{
+    height: 100%;
+    display: flex;
+}
+
+
+.appSidebar
+{
+    width: 200px;
+    background: black;
+    height: 100%;
+    color: white;
+    padding-top: 100px;
+    padding-right: 30px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.rightAppContainer
+{
+    width: calc(100% - 200px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.appHeader
+{
+    height:40px;
+    width:100%;
+    background:#4A90E2;
+}
+
+.rightAppLoaderComponent
+{
+    flex-grow: 1;
+    overflow: scroll;
+    height: calc(100% - 40px);
+    padding-left: 30px;
+}
+
+.planCardContainer
+{
+    width: 278px;
+    height: 394px;
+    color: #4A4A4A;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.planListContainer
+{
+    display: flex;
+}
+
+.planCardContainer:hover
+{
+    box-shadow: 0px 0px 10px 0px #00000045;
+}
+.selectedPlan
+{
+    box-shadow: 0px 2px 8px 0px rgba(74,144,226,1)!important;
+    border-color: rgba(74,144,226,1);
+}
+
+.offer
+{
+    width: 584px;
+    margin: 20px 10px;
+    border: 1px solid #4A4A4A;
+    padding: 20px;
+    border-radius: 4px;
+    color: #4A4A4A;
+    height: 1000px;
+}
